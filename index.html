@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <title>Document</title>
+    <style>
+        .nav-bar{
+            font-size: 1.2em;
+            width: 250px;
+            height: 300px;
+            margin-left: 0;
+
+        }
+        .nav-content{
+            height: 50px;
+            width: 300px;
+        }
+        .nav-content a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<script src="https://kit.fontawesome.com/fec8e1cf03.js" crossorigin="anonymous"></script>
+<script>
+    let isOpen = false;
+    function iconbar()
+    {
+        var x = document.getElementById("bar");
+        if(isOpen){ isOpen = false; 
+            x.style.display = "none";
+        }
+        else{ isOpen = true;
+            x.style.display = "block";
+            }
+        
+    }
+</script>
+
+<body> 
+
+
+    <!-- Heading -->
+    <div class="app-bar">
+        <div class="flex-container toolbar">
+            <div class="flex-item">
+                <header class="heading">
+                    <h1> Dipti Rani</h1>
+                </header>
+                <i class="fas fa-bars" id="menu-icon" style="font-size: 24px; padding-left: 0; padding-top: 0;" onclick="iconbar()"></i>
+                <div id="bar">
+                    <table class="nav-bar" border="1">
+                        <tr class="nav-content">
+                            <th><a href="#">HOME</a></th>
+                        </tr>
+                        <tr class="nav-content">
+                            <th><a href="#about">ABOUT</a></th>
+                        </tr>
+                        <tr class="nav-content">
+                            <th><a href="#education"> EDUCATION</a></th>
+                        </tr>
+                        <tr class="nav-content">
+                            <th><a href="#reachme"> CONTACT</a></th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="flex-item">
+                <nav class="heading-link">
+                    <a href="#">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#education">EDUCATION</a>
+                    <a href="#reachme">CONTACT</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Home -->
+    <div class="container">
+        <div class="content1 content">
+            <p class="para1">Hello, I'm Dipti.</p><br>
+            <p class="para2">I am pursuing Bachelor of Enginnering in Computer Technology from <a href="https://nagpuruniversity.ac.in/" target="_blank">Nagpur University. </a> </p><br><br>
+            <p class="para2">I have interest in programing. I have knowledge of HTML, SQL, JavaScript, CSS, C++ and C. </p><br>
+            <p class="para2">I also have knowledge of linux and shell scripting. </p>
+            <br><br>
+            <button class="button"><a href="#reachme"> Contact me </a></button>
+        </div>
+        <div class="content2 content">
+            <img src="images/home.jpeg" alt="logo" width="100%" height="50%">
+        </div>
+    </div>
+
+
+    <!-- About -->
+    <div class="about-container" id="about"> 
+        <div class="about1">
+            <img src="images/who.jpeg" width="300px">
+        </div>
+        <div class="about2">
+            <h1>Who am I?</h1><br><br>
+            <p class="para2">Engineering student, who loves to explore, learn new technologies and build some coolest web application having some greatest design architecture.
+            <br>My area of focus lies in designing and coding web application.</p>
+            <br><br>
+            <p class="para2">I am curretly pursuing my Bachelor of Engineering from Kavikulguru Institute Of Technology and Science, Ramtek in Computer Technology.</p>
+            <br><br>
+            <p class="para2">I have also worked as Student volunteer in National Service Scheme which aimed to inspire the people from small villages and tell them the importance of education.</p>
+        </div>
+    </div> 
+
+
+    <!-- Education -->
+    <div id="education">
+        <h1>Education</h1>
+        <table class="education-container">
+            <tr>
+                <td style="width: 20%;">
+                   <a href="http://www.kits.edu/" target="_blank"> <img src="images/kits.jpeg" width="150px"> </a>
+                </td>
+                <td style="width: 100%;">
+                    <p class="edu-para"><b>Kavikulguru Institute Of Technology and Sciene, Ramtek, Nagpur, Maharashtra</b></p>
+                    <p class="edu-para">Bachelor Of Engineering - BE, Computer Technology</p>
+                    <p class="edu-para">2019 - 2023</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 20%;">
+                    <a href="http://www.stpaulkatni.edu.in/" target="_blank"><img src="images/stpaul.png" width="130px"></a>
+                </td>
+                <td style="width: 100%;">
+                    <p class="edu-para"><b>St. Paul's Senior Secondary School, Katni, Madhya Pradesh</b></p>
+                    <p class="edu-para">11th & 12th - Maths & Science</p>
+                    <p class="edu-para">2017 - 2019</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 20%;">
+                    <a href="http://mdnggps.org/" target="_blank"><img src="images/ggps.png" width="130px"></a>
+                </td>
+                <td>
+                    <p class="edu-para"><b>M.D.N.G.G.P.S, Jamune, Daltonganj, Jharkhand</b></p>
+                    <p class="edu-para">Nur - 10th</p>
+                    <p class="edu-para">2006 - 2017</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- Contact -->
+    <div class="contact" id="reachme">
+        <h1>Contact</h1>
+        <table>
+            <div class="table-container">
+                <div class="table1">
+                    <p class="table-item">Phone No.</p>
+                    <p class="table-item"><b><a href="tel:+918355661213" style="color: black; text-decoration: none;"> +918355661213 </a></b></p><br><br>
+                    <p class="table-item">Email address:</p>
+                    <p class="table-item"><b>gdipti642@gmail.com</b></p><br><br>
+                    <p class="table-item">Address</p>
+                    <p class="table-item"><b>Girls Hostel, KITS Ramtek, Maharashtra</b></p>
+                </div>
+                <div class="table2">
+                    <p class="table-item" style="margin-left: 10%;"><b> Reach me through these social sites.</b></p>
+                    <a href="https://twitter.com/Dipti_Rani16" target="_blank"><img src="images/twitter.png" width="35px" height="35px"></a>
+                    <a href="https://www.linkedin.com/in/dipti-rani/" target="_blank"><img src="images/linkdin.png" width="35px" height="35px"></a>
+                    <a href="https://github.com/diptirani16" target="_blank"><img src="images/github.png" width="48px" height="48px"></a>
+                    <p class="copyright" style="margin-left: 10%; font-size: 14px;">Copyright(C) 2020 Dipti Rani</p>
+                </div>
+            </div>
+        </table>
+    </div>
+</body>
+</html>

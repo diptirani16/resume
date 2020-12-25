@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container { 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.app-bar {
+    width: 83vw;
+    background-color: white;
+    padding: 4vh 8vw 2.5vh;
+    position: sticky;
+    top: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.flex-item {
+    margin: auto 0;
+    
+}
+
+.heading-link a {
+    margin: 0 1.5vw;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: black;
+}
+.heading-link :hover{
+    font-size: 18px;
+}
+.heading{
+    color: red;
+    letter-spacing: 0.5px;
+}
+h1{
+    font-size: 38px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    height: 650px;
+}
+.content{
+    padding-right: 0;
+    padding-top: 8vh;
+    padding-left: 8vw;
+    
+}
+.content1{
+    width: 50%;
+    height: 1000px;
+}
+.content2{
+    width: 50%;
+    height: 1000px;
+}
+.para1{
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+}
+.para2{
+    font-size: 18px;
+    font-family: serif;
+    letter-spacing: 1.2px;
+    line-height: 1.8;
+}
+.para2 a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.para2  :hover{
+    text-decoration: underline;
+}
+.button{
+    padding: 10px 10px;
+    font-size: 16px;
+    background-color: black;
+    
+}
+.button a{
+    color: white;
+    text-decoration: none;
+}
+.contact{
+    background-color: rgb(243, 235, 235);
+    height: 500px;
+    margin: 3% 3%;
+   
+}
+.contact h1{
+    font-weight: bold;
+    padding: 4%;
+    margin-left: 2%;
+}
+.table-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+   
+}
+.table1, .table2{
+    width: 55%;
+}
+.about2{
+    width: 45%;
+    margin-right: 5%;
+}
+.about1{
+    padding: 8% 10%;
+}
+.table2 img{
+    padding: 10%;
+}
+.table-item{
+    font-size: 1.2em;
+    line-height: 25px;
+}
+.about-container{
+    padding-top: 8%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.education-container{
+    width: 100%;
+    border-color: rgb(223, 218, 218);
+    padding-top: 4%;
+}
+.education-container img{
+    margin: 6%;
+}
+#education{
+    padding: 8%;
+}
+.edu-para{
+    font-size: 18px;
+    font-family: serif;
+    letter-spacing: 1.2px;
+    line-height: 1.8;
+    margin-left: 10%;
+}
+footer{
+    text-align: right;
+    font-size: 14px;
+}
+
+#bar{
+    /* position: absolute; */
+    z-index: 10;
+    display: none;
+    background-color: whitesmoke;
+}
+#menu-icon {
+    display: none!important;
+}
+
+/* Mobile view */
+
+@media screen and (max-width: 500px){
+    .flex-item{
+        width: 80%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .heading{
+        text-align: right;
+    }
+    #bar{
+        text-align: center;
+        margin-top: 0;
+    }
+    .flex-container{
+        display: inline;
+    }
+    .heading-link a{
+        display: none;
+    }
+    .menu-container{
+        margin-left: 4%;
+    }
+    #menu-icon {
+    display: inline!important;
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .content1,.content2{
+        width: 86%;
+        height: 550px;
+    }
+    /* .content2 img{
+        height: 40vh;
+    } */
+    .about-container{
+        flex-direction: column-reverse;
+    }
+    /* .about1{
+        /* padding: 8% 15%; */
+    /* } */
+    .about2{
+        padding: 8%;
+        padding-top: 40%;
+        width: 90%;
+    }
+    .education-container{
+        border-spacing: 0 8vh;
+        padding-left: 1%;
+        width: 100%;
+    }
+    .education-container img{
+        margin: 0;
+    }
+    .table-container{
+        flex-direction: column;
+        text-align: center;
+        padding-left: 8%;
+        height: auto;
+        width: 90%;
+    }
+    .copyright{
+        text-align: right;
+    }
+    .table1{
+        width: 100%;
+    }
+    .table2{
+        padding-top: 8%;
+        width: 100%;
+    }
+    .contact h1{
+        text-align: center;
+    }
+}
+
+/* Tablet view */
+
+@media screen and (max-width: 820px){
+    .flex-container{
+        flex-direction: column;
+    }
+    .heading{
+        text-align: center;
+    }
+    .heading-link{
+        padding-top: 5%;
+        text-align: center;
+    }
+    .heading-link a{
+        padding: 1%;
+    }
+}
+
+
